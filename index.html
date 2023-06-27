@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Virutal Jukebox</title>
+</head>
+<body>
+  <h1 class="hidden">Javascript Jukebox</h1>
+  <main>
+    <h2>Audio Tracks - Pick One!</h2>
+    <audio src="audio/Albatroz.mp3"></audio>
+    <section id="album-art">
+        <h2 class="hidden">Albums</h2>
+        <img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="albatroz album art" class="track-ref">
+        <img data-trackref="STP_ILS" src="images/stp.jpeg" alt="Stone Temple Pilots album art" class="track-ref">
+        <img data-trackref="Companion" src="images/wmm.jpeg" alt="Wide Mouth Mason album art" class="track-ref">
+    </section>
+    <section class="audio-controls">
+      <button id="playButton">PLAY</button>
+      <button id="pauseButton">PAUSE</button>
+      <button id="rewindButton">REWIND</button>
+      <input type="range" id="volumeControl" min="0" max="100" step="1">
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
